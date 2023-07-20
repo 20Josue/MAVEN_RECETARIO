@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Vista;
+package pe.edu.utp.Vista;
 
 import javax.swing.JOptionPane;
 
@@ -26,25 +26,20 @@ public class Login extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         txtUsuario = new javax.swing.JTextField();
         etPassword = new javax.swing.JPasswordField();
         btnIngresar = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Contraseña");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 260, 110, 50));
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Usuarios");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 190, 110, 50));
 
         txtUsuario.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         txtUsuario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -53,12 +48,18 @@ public class Login extends javax.swing.JFrame {
                 txtUsuarioActionPerformed(evt);
             }
         });
-        jPanel1.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 190, 250, 50));
+        jPanel1.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, 250, 50));
 
         etPassword.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         etPassword.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jPanel1.add(etPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, 250, 50));
+        etPassword.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                etPasswordActionPerformed(evt);
+            }
+        });
+        jPanel1.add(etPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 270, 250, 50));
 
+        btnIngresar.setBackground(new java.awt.Color(153, 153, 255));
         btnIngresar.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
         btnIngresar.setText("Ingresar");
         btnIngresar.addActionListener(new java.awt.event.ActionListener() {
@@ -66,18 +67,34 @@ public class Login extends javax.swing.JFrame {
                 btnIngresarActionPerformed(evt);
             }
         });
-        jPanel1.add(btnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 420, 220, 70));
+        jPanel1.add(btnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 360, 220, 70));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 511, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 598, Short.MAX_VALUE)
-        );
+        jPanel2.setBackground(new java.awt.Color(51, 153, 255));
+        jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel2.setPreferredSize(new java.awt.Dimension(350, 500));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("D'ZOILA");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 118, 319, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/D'ZOILA (1).jpeg"))); // NOI18N
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 198, -1, -1));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 350, 500));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/user1.png"))); // NOI18N
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 20, -1, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/user2.png"))); // NOI18N
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 190, -1, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/password.png"))); // NOI18N
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 280, -1, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 795, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -97,6 +114,10 @@ public class Login extends javax.swing.JFrame {
             etPassword.setText(null);
         }
     }//GEN-LAST:event_btnIngresarActionPerformed
+
+    private void etPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_etPasswordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_etPasswordActionPerformed
 
     private boolean VerificarContraseña(){
         String usuario = "zoila";
@@ -147,9 +168,13 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnIngresar;
     private javax.swing.JPasswordField etPassword;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables
 }

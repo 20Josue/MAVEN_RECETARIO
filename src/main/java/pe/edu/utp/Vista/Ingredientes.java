@@ -1,7 +1,7 @@
 
-package Vista;
+package pe.edu.utp.Vista;
 
-import Modelo.*;
+import pe.edu.utp.Config.Conexion;
 import java.sql.*;
 import javax.swing.JOptionPane;
 
