@@ -2,11 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Vista;
+package pe.edu.utp.Vista;
 
+import pe.edu.utp.Config.Conexion;
 import javax.swing.JOptionPane;
 import java.sql.*;
-import Modelo.*;
 
 public class Ver_Receta extends javax.swing.JFrame {
 

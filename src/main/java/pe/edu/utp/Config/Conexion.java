@@ -1,5 +1,5 @@
 
-package Modelo;
+package pe.edu.utp.Config;
 
 import java.sql.*;
 import javax.swing.JOptionPane;

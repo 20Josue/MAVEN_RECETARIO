@@ -1,5 +1,5 @@
 
-package Vista;
+package pe.edu.utp.Vista;
 
 public class Menu_Interfaz extends javax.swing.JFrame {
 
